@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NinetyNineCats</title>
+  </head>
+  <body>
+    <header>
+      <h1>99 Cats</h1>
+    </header>
+
+    <h2> <%= @cat.name %> </h2>
+
+    <table>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>AGE</td>
+        <td><%= @cat.age %></td>
+      </tr>
+      <tr>
+        <td>BIRTH_DATE</td>
+        <td><%= @cat.birth_date %></td>
+      </tr>
+      <tr>
+        <td>COLOR</td>
+        <td><%= @cat.color %></td>
+      </tr>
+      <tr>
+        <td>SEX</td>
+        <td><%= @cat.sex %></td>
+      </tr>
+    </table>
+  </body>
+</html>

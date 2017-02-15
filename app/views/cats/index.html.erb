@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="99 Cats Rental Site">
+    <title>NinetyNineCats</title>
+  </head>
+  <body>
+    <header>
+      <h1>99 Cats</h1>
+    </header>
+
+    <h2>ALL OF THE CATS IN THE WORLD</h2>
+    <ul>
+      <% @cats.each do |cat| %>
+        <li>
+        <%= link_to "Rent #{cat.name}", cat %>
+        </li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
